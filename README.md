@@ -30,3 +30,22 @@ Guns? NOPE!
 To make it more intuitive, I added some example things. Of course, I don't think you want to create a page to sell **guns**, so you'll want to replace everything inside the `greatvf`, and probably remove everything related to `order`. 
 Again, the `order` class has nothing to do with AGE. It's just an example following the same philosophy; after entering what gun do you want **inside** the `greatvf`, hide everything and tell me how sweet the verification was.
 And also, if you don't want to get fancy notifications like you do in the example, you can remove everything related to Freeow!.
+
+Screenshots
+----
+We all love them. Click to see big!
+
+### Initial verification (prevf) ###
+[![Imgur](http://i.imgur.com/36tKlSPl.png)](http://i.imgur.com/36tKlSP.png)
+
+### Verification passed (greatvf) ###
+[![Imgur](http://i.imgur.com/uYe2BN6l.png)](http://i.imgur.com/uYe2BN6.png)
+
+### Verification not passed (badvf) ###
+[![Imgur](http://i.imgur.com/jCODOVGl.png)](http://i.imgur.com/jCODOVG.png)
+
+### Error (error) ###
+[![Imgur](http://i.imgur.com/vLtvsajl.png)](http://i.imgur.com/vLtvsaj.png)
+
+### Order (order) ###
+Since this is an example... You must download and try to see it!
