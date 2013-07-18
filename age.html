@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>[+18] AGE</title>
+	<!-- Some CSS -->
+	<link rel="stylesheet" type="text/css" href="age.css" />
+	<!-- Freeow CSS -->
+	<link rel="stylesheet" type="text/css" href="vendor/freeow/freeow.css"/>
+</head>
+<body onload="checkAge();">
+	<!-- content -->
+
+	<!-- Headers (only 1 shown) -->
+	<h1 class="prevf">Validating your age...</h1>
+	<h1 class="greatvf">Welcome, your age is verified!</h1>
+	<h1 class="badvf">No, this is sad!</h1>
+	<h1 class="error">Errorz, errorz 'verywhere!</h1>
+	<h1 class="order">Your order has been processed!</h1>
+	<!-- /Headers -->
+
+	<!-- Paragraphs (only 1 shown) -->
+	<div class="greatvf">Buy a gun today!<br />
+	What brand would you like?<br />
+	<form>
+		<input type="text" id="gunBrand" name="gunBrand"/>
+		<input type="button" id="submitButton" value="Buy!" disabled="true" onclick="gimmeTheGun()"/>
+	</form>
+	</div>
+	<div class="order">Hoorrah! Your order has been correctly processed! You'll receive a lovely <span id="gunReplace">gun</span> soon!</div>
+	<p class="badvf">GO BACK TO GOOGLE YOU MINOR OR GRANNY!!!1</p>
+	<p class="error">What in the world did you do?! ERR!</p>
+	<!-- /Paragraphs -->
+
+	<!-- Freeow container -->
+	<div id="freeow" class="freeow freeow-top-right"></div>
+	<!-- /Freeow container -->
+
+	<!-- /content -->
+
+	<!-- jQuery -->
+	<script type="text/javascript" src="vendor/jquery.js"></script>
+	<!-- Freeow -->
+	<script type="text/javascript" src="vendor/freeow/freeow.js"></script>
+	<!-- Script for age control -->
+	<script type="text/javascript" src="age.js"></script>
+</body>
+</html>

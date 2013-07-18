@@ -1,0 +1,37 @@
+/* My lovely CSS code for AGE */
+
+body {
+    background: url("/img/bg-grad.jpg") repeat scroll 0 0 #EFEFEE;
+    color: #333333;
+    font-family: "Lucida Grande", "Helvetica Neue", "Arial", sans-serif;
+}
+
+/****** These are the default visibilities ******/
+
+.prevf {
+	/* Visible, before verification */
+	display: block;
+}
+.greatvf {
+	/* Not verified yet... */
+	display: none;
+}
+.badvf {
+	/* Not verified yet... */
+	display: none;
+}
+.error {
+	/* Not erred yet... */
+	display: none;
+
+	/* Error-ish red */
+	color: red;
+	font-weight: bold;
+}
+.order {
+	/* Not ordered yet... */
+	display: none;
+}
+.order #gunReplace {
+	text-decoration: underline;
+}
