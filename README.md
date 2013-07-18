@@ -19,12 +19,11 @@ showClass? hideClass?
 Ha! This is my favorite part. I don't really know if this is the good way to do this (I doubt it), but to help you not waste time I have included everything in a single HTML file.
 That means that EVERYTHING is in the `age.html` file. The things that the user see before the verification, the things that the user see if the verification went OK... 
 Here you have a detailed explanation of what each class is:
-
-    prevf → The only thing visible when the page is loaded.
-    greatvf → The header and div the user sees if he passed the verification.
-    badvf → The header and div the user sees if he didn't pass the verification.
-    error → The header an paragraph the user sees if there was an error (dammit).
-    order → When the user buys a gun (see below).
+- prevf → The only thing visible when the page is loaded.
+- greatvf → The header and div the user sees if he passed the verification.
+- badvf → The header and div the user sees if he didn't pass the verification.
+- error → The header an paragraph the user sees if there was an error (dammit).
+- order → When the user buys a gun (see below).
 
 Guns? NOPE!
 ----
