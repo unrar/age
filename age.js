@@ -27,43 +27,52 @@ function checkInput() {
 
 // Function that checks the age and, depending of it, shows or hides some classes
 function checkAge() {
-	/* Check the input! */
-	checkInput();
 	var userAge;
-	userAge = parseInt(prompt("How old are you?"), 10);
+	/* [v2.0] Read the cookie (try) [jQuery] */
+	var cookieAge = $.cookie("AGE_age");
+	/* [v2.0] Check it there's a value in the cookie. If there's set userAge to it. Else, ask for the age [jQuery] */
+	if (cookieAge) {
+		$("#freeow").freeow("Cookie detected", "You already told us that you're " + cookieAge + " in a previous visit.", {
+	    autoHideDelay: 3000,
+	    autoHide: true,
+	    classes: ["osx"]
+		});
+		userAge = cookieAge;
+	}
+	else {
+		userAge = parseInt(prompt("How old are you?"), 10);
+	}
 	/* Now we've the age to verify, let's hide the pre-verification things */
 	hideClass("prevf");
 	if (isNaN(userAge)) {
-	    console.log("Not a number!");
 	    /* Show error */
-	    showClass("error");;
+	    showClass("error");
 	}
 	else if (userAge < 18) {
-	    console.log("Sorry, this is a porn site and you can't access it!");
 	    /* Show badvf */
 	    showClass("badvf");
 	}
 	else if (userAge == 18) {
-	    console.log("HA! You're trying to make me blieve you're 18?");
 	    /* Show badvf */
 	    showClass("headerBadvf");
 		showClass("badvf");
 	}
 	else if (userAge > 18 && userAge < 99) {
-	    console.log("Go ahead, see the porn...");
+		/* Start the timer for checkInput */
+		checkInput();
 	    /* Show greatvf */
 	    showClass("greatvf");
 	}
 	else if (userAge >= 100) {
-	    console.log("Ugh, I think your penis can't handle porn anymore...");
 	    /* Show badvf */
 		showClass("badvf");
 	}
 	else {
-	    console.log("If you're seeing this, you're crazy.");
 	    /* Error */
 	    showClass("error");
 	}
+	/* [v2.0] Put the age in a cookie, even if it's NaN [jQuery] */
+	$.cookie("AGE_age", userAge, {path: '/'});
 }
 
 // Function that processes your order [jQuery]
