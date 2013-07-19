@@ -1,9 +1,19 @@
 /* My lovely CSS code for AGE */
 
 body {
-    background: url("/img/bg-grad.jpg") repeat scroll 0 0 #EFEFEE;
+    /*background: url("/img/bg-grad.jpg") repeat scroll 0 0 #EFEFEE;*/
     color: #333333;
     font-family: "Lucida Grande", "Helvetica Neue", "Arial", sans-serif;
+    margin:50px 0px; padding:0px;
+	text-align:center;
+}
+#Content {
+	width:500px;
+	margin:0px auto;
+	text-align:left;
+	padding:15px;
+	border:1px dashed #333;
+	background-color:#eee;
 }
 
 /****** These are the default visibilities ******/
