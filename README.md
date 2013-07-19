@@ -1,4 +1,4 @@
-AGE v1.0
+AGE v2.1
 ==========
 
 Have you ever wanted a nice age verification for your site, but you were too lazy to do a complex one?
@@ -24,6 +24,17 @@ Here you have a detailed explanation of what each class is:
 - `badvf` → The header and div the user sees if he didn't pass the verification.
 - `error` → The header an paragraph the user sees if there was an error (dammit).
 - `order` → When the user buys a gun (see below).
+
+Cookies!
+----
+Yes, since v2.0 there are cookies! That's how it works:
+
+1. The page is loaded. 
+2. jQuery looks for a `AGE_age` cookie.
+3. If it exists, it sets `userAge` as its value. If it doesn't, it asks the user for his age and, if he entered something, it creates the cookie `AGE_age` with the value.
+4. The age is verified as usual.
+
+By default, the cookies are only valid for the session — they're deleted when the user closes the navigator. Look at the wiki to learn how to change this behaviour.
 
 Guns? NOPE!
 ----

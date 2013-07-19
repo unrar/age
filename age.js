@@ -41,6 +41,9 @@ function checkAge() {
 	}
 	else {
 		userAge = parseInt(prompt("How old are you?"), 10);
+		/* [v2.0] Put the age in a cookie, if it exists and could be parsed [jQuery] */
+		if (userAge && !isNaN(userAge))	
+			$.cookie("AGE_age", userAge, {path: '/'});
 	}
 	/* Now we've the age to verify, let's hide the pre-verification things */
 	hideClass("prevf");
@@ -71,8 +74,7 @@ function checkAge() {
 	    /* Error */
 	    showClass("error");
 	}
-	/* [v2.0] Put the age in a cookie, even if it's NaN [jQuery] */
-	$.cookie("AGE_age", userAge, {path: '/'});
+
 }
 
 // Function that processes your order [jQuery]
